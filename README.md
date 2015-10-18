@@ -55,7 +55,7 @@ The window can be scrolled using keyboard.
 
 To jump to a value, simply click on it or anywhere on the line containing it. For lines
 with key-value pairs, click on the equals sign or after it to jump to the value and click before
-the sign to show the key. To go back, use `Backspace`. See below for a full list of controls.
+the sign to show the key. To go back, use `Backspace` or click on the header or on empty line. See below for a full list of controls.
 
 The header shows path from the initial value to the current one, as well as its type and size for strings and tables.
 Other properties, such as metatables and upvalues, may be shown in the main window after the value.
