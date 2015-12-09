@@ -3,7 +3,8 @@
 #include <ncurses.h>
 
 int l_init(lua_State *L) {
-    mousemask(BUTTON1_CLICKED, NULL);
+    mousemask(BUTTON1_RELEASED, NULL);
+    mouseinterval(0);
     return 0;
 }
 
@@ -15,7 +16,7 @@ int l_close(lua_State *L) {
 int l_get_coords(lua_State *L) {
     MEVENT mouse_event;
 
-    if (getmouse(&mouse_event) == OK && mouse_event.bstate == BUTTON1_CLICKED) {
+    if (getmouse(&mouse_event) == OK && mouse_event.bstate == BUTTON1_RELEASED) {
         lua_pushinteger(L, mouse_event.x);
         lua_pushinteger(L, mouse_event.y);
         return 2;
