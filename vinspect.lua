@@ -5,7 +5,7 @@ local rawlen = rawget(_G, "rawlen") or function(t) return #t end
 local mtype = rawget(math, "type") or function() return "integer" end
 
 local vinspect = {
-   _VERSION = "0.0.1"
+   _VERSION = "0.0.2"
 }
 
 local escaped_chars = {
