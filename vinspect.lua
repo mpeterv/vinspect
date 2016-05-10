@@ -1,4 +1,4 @@
-local curses = require "posix.curses"
+local curses = require "curses"
 local mouse = require "vinspect.mouse"
 
 local rawlen = rawget(_G, "rawlen") or function(t) return #t end

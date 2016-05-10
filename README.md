@@ -3,7 +3,7 @@
 vinspect is a library for interactive inspection of complex Lua values.
 It visualizes them via ncurses and allows browsing table structures using mouse and keyboard.
 
-vinspect depends on [luaposix](https://github.com/luaposix/luaposix) 33.3.0 or newer.
+vinspect depends on [lcurses](https://github.com/lcurses/lcurses) 9.0.0 or newer.
 
 ## Installation
 

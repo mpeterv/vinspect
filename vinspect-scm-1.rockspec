@@ -14,7 +14,7 @@ using mouse and keyboard.]],
 }
 dependencies = {
    "lua >= 5.1, < 5.4",
-   "luaposix >= 33.3.1"
+   "lcurses >= 9.0.0"
 }
 build = {
    type = "builtin",
